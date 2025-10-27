@@ -6,7 +6,7 @@
 /*   By: nefimov <nefimov@student.42berlin.de>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/27 15:12:35 by nefimov           #+#    #+#             */
-/*   Updated: 2025/10/27 15:25:11 by nefimov          ###   ########.fr       */
+/*   Updated: 2025/10/27 16:11:30 by nefimov          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,8 +16,7 @@
 #include <string>
 
 class ClapTrap {
-public:
-	ClapTrap(void);
+  public:
 	ClapTrap(const std::string nm);
 	ClapTrap(const ClapTrap& other);
 	~ClapTrap(void);
@@ -27,11 +26,12 @@ public:
 	void takeDamage(unsigned int amount);
 	void beRepaired(unsigned int amount);
 	
-private:
+  private:
+	ClapTrap(void);
 	std::string name;
-	int hit_pts = 10;
-	int energie_pts = 10;
-	int attack_dmg = 0;
+	unsigned int hit_pts;
+	unsigned int energie_pts;
+	unsigned int attack_dmg;
 };
 
 #endif  // CLAPTRAP_HPP
