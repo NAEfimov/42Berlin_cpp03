@@ -6,7 +6,7 @@
 /*   By: nefimov <nefimov@student.42berlin.de>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/27 15:12:35 by nefimov           #+#    #+#             */
-/*   Updated: 2025/10/27 15:19:22 by nefimov          ###   ########.fr       */
+/*   Updated: 2025/10/27 15:25:11 by nefimov          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@
 class ClapTrap {
 public:
 	ClapTrap(void);
-	ClapTrap(const std::string name);
+	ClapTrap(const std::string nm);
 	ClapTrap(const ClapTrap& other);
 	~ClapTrap(void);
 	ClapTrap& operator=(const ClapTrap& other);
