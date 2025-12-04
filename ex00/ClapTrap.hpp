@@ -17,7 +17,8 @@
 
 class ClapTrap {
   public:
-	ClapTrap(const std::string nm);
+	ClapTrap(void);
+	ClapTrap(const std::string& nm);
 	ClapTrap(const ClapTrap& other);
 	~ClapTrap(void);
 	ClapTrap& operator=(const ClapTrap& other);
@@ -27,11 +28,10 @@ class ClapTrap {
 	void beRepaired(unsigned int amount);
 	
   private:
-	ClapTrap(void);
-	std::string name;
-	unsigned int hit_pts;
-	unsigned int energie_pts;
-	unsigned int attack_dmg;
+	std::string		_name;
+	unsigned int	_hit_pts;
+	unsigned int	_energie_pts;
+	unsigned int	_attack_dmg;
 };
 
 #endif  // CLAPTRAP_HPP

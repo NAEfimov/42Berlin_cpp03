@@ -15,24 +15,25 @@
 
 int main(void) {
 	std::cout << "==== Charlie ====" << std::endl;
-	ClapTrap cp("Charlie");
-	cp.attack("Phill");	
-	cp.takeDamage(8);
-	cp.takeDamage(1);
-	cp.takeDamage(1);
-	cp.takeDamage(10);
+	ClapTrap ct;
+	ct = ClapTrap("Charlie");
+	ct.attack("Phill");	
+	ct.takeDamage(8);
+	ct.takeDamage(1);
+	ct.takeDamage(1);
+	ct.takeDamage(10);
 
 	std::cout << std::endl << "==== Weacky ====" << std::endl;
-	cp = ClapTrap("Weacky");
-	cp.attack("Phill");
+	ct = ClapTrap("Weacky");
+	ct.attack("Phill");
 	for (int i = 0; i < 11; ++i) {
-		cp.beRepaired(1);
+		ct.beRepaired(1);
 	}
-	cp.attack("Phill");
-	cp.takeDamage(18);
-	cp.takeDamage(2);
-	cp.beRepaired(1);
-	cp.takeDamage(1);
+	ct.attack("Phill");
+	ct.takeDamage(18);
+	ct.takeDamage(2);
+	ct.beRepaired(1);
+	ct.takeDamage(1);
 
 	return 0;
 }
