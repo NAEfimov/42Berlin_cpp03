@@ -10,29 +10,19 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ClapTrap.hpp"
+#include "ScavTrap.hpp"
 #include <iostream>
 
 int main(void) {
-	std::cout << "==== Charlie ====" << std::endl;
-	ClapTrap cp("Charlie");
-	cp.attack("Phill");	
-	cp.takeDamage(8);
-	cp.takeDamage(1);
-	cp.takeDamage(1);
-	cp.takeDamage(10);
+	std::cout << "==== ScavMike ====" << std::endl;
+	ScavTrap st("ScavMike");
+	st.attack("Phill");
+	st.guardGate();
+	st.takeDamage(8);
+	st.takeDamage(1);
+	st.takeDamage(90);
+	st.takeDamage(2);
 
-	std::cout << std::endl << "==== Weacky ====" << std::endl;
-	cp = ClapTrap("Weacky");
-	cp.attack("Phill");
-	for (int i = 0; i < 11; ++i) {
-		cp.beRepaired(1);
-	}
-	cp.attack("Phill");
-	cp.takeDamage(18);
-	cp.takeDamage(2);
-	cp.beRepaired(1);
-	cp.takeDamage(1);
 
 	return 0;
 }
