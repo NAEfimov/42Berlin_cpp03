@@ -6,7 +6,7 @@
 /*   By: nefimov <nefimov@student.42berlin.de>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/27 17:47:19 by nefimov           #+#    #+#             */
-/*   Updated: 2025/10/27 18:00:31 by nefimov          ###   ########.fr       */
+/*   Updated: 2025/12/12 23:26:49 by nefimov          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 
 #include "ClapTrap.hpp"
 
-class FragTrap : ClapTrap {
+class FragTrap : public ClapTrap {
 public:
     FragTrap(void);
     FragTrap(const std::string& nm);
@@ -23,9 +23,9 @@ public:
     ~FragTrap();
     FragTrap& operator=(const FragTrap& other);
 
-    void attack(const std::string& target);
-    void takeDamage(unsigned int amount);
-	void beRepaired(unsigned int amount);
+    // void attack(const std::string& target);
+    // void takeDamage(unsigned int amount);
+	// void beRepaired(unsigned int amount);
     void highFivesGuys(void);
 };
 
