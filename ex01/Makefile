@@ -11,7 +11,6 @@ NAME		:= main
 # SRCS			source files
 #
 # OBJS			object files
-# DEPS			dependency files
 #
 # CC			compiler
 # CFLAGS		compiler flags
@@ -27,9 +26,7 @@ SRCS		:=	main.cpp		\
 				ScavTrap.cpp
 
 OBJ_DIR		:=	obj
-
 OBJS		:= $(SRCS:%.cpp=$(OBJ_DIR)/%.o)
-DEPS		:= $(OBJS:.o=.d)
 
 CPP			:= c++
 CFLAGS		:= -Wall -Wextra -Werror -std=c++98
