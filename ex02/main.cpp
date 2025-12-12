@@ -6,7 +6,7 @@
 /*   By: nefimov <nefimov@student.42berlin.de>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/27 15:19:59 by nefimov           #+#    #+#             */
-/*   Updated: 2025/10/27 16:25:53 by nefimov          ###   ########.fr       */
+/*   Updated: 2025/12/12 17:59:35 by nefimov          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,7 @@ int main(void) {
 	ft.takeDamage(8);
 	ft.takeDamage(1);
 	ft.takeDamage(90);
+	ft.beRepaired(1);
 	ft.takeDamage(2);
 
 	std::cout << std::endl << "==== FragTraps array ====" << std::endl;
