@@ -6,7 +6,7 @@
 /*   By: nefimov <nefimov@student.42berlin.de>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/27 17:47:19 by nefimov           #+#    #+#             */
-/*   Updated: 2025/12/12 23:23:21 by nefimov          ###   ########.fr       */
+/*   Updated: 2025/12/15 10:38:58 by nefimov          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,12 +24,7 @@ public:
     ScavTrap& operator=(const ScavTrap& other);
 
     void attack(const std::string& target);
-    // void takeDamage(unsigned int amount);
-	// void beRepaired(unsigned int amount);
     void guardGate(void);
-
-// private:
-//     bool _guardMode;
 };
 
 #endif  // SCAVTRAP_HPP
