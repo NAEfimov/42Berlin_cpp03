@@ -31,7 +31,7 @@ OBJ_DIR		:=	obj
 OBJS		:= $(SRCS:%.cpp=$(OBJ_DIR)/%.o)
 
 CPP			:= c++
-CFLAGS		:= -Wall -Wextra -Werror -Wshadow -Wno-shadow -std=c++98
+CFLAGS		:= -Wall -Wextra -Werror -Wshadow -std=c++98
 IFLAGS		:= $(addprefix -I,$(INCS))
 
 #------------------------------------------------#
